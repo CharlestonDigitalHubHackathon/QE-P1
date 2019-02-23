@@ -14,11 +14,16 @@ public class WebController {
 
     @RequestMapping("/Bobcats")
     public String bobcats() {
-        return "bobcats.html";
+        return "Bobcats";
     }
 
     @RequestMapping("/pelicans")
     public String pelicans() {
-        return "pelicans.html";
+        return "pelicans";
+    }
+
+    @RequestMapping("/turtles")
+    public String turtles() {
+        return "turtles";
     }
 }
