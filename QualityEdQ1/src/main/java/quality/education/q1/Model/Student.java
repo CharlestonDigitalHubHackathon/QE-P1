@@ -2,18 +2,27 @@ package quality.education.q1.Model;
 
 public class Student {
 
-    private Long id;
+    private Integer id;
     private String firstName;
     private String lastName;
     private String projectIntrest;
     private String gender;
     private Integer age;
 
-    public Long getId() {
+    public Student(Integer id, String firstName, String lastName, String projectIntrest, String gender, Integer age) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.projectIntrest = projectIntrest;
+        this.gender = gender;
+        this.age = age;
+    }
+
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

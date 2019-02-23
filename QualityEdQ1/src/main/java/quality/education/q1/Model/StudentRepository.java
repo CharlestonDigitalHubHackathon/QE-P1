@@ -11,13 +11,15 @@ public class StudentRepository {
 
     public StudentRepository() {
         this.students = new ArrayList<Student>();
+        students.add(new Student(1000,"Amanda", "Franks", "Wildlife", "Female", 12));
+        students.add(new Student(1001,"Eloise", "Gonzales", "Sea Life", "Female", 12));
     }
 
     public void addStudent(Student s){
         students.add(s);
     }
 
-    public void removeStudent(Long id) {
+    public void removeStudent(Integer id) {
         for (Student student:students) {
             if (student.getId().equals(id)) {
                 students.remove(student);
@@ -25,7 +27,7 @@ public class StudentRepository {
         }
     }
 
-    public Student findById(Long id) {
+    public Student findById(Integer id) {
         for (Student student:students) {
             if (student.getId().equals(id)) {
                 return student;
