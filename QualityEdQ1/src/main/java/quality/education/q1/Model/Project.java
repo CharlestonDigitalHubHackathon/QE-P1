@@ -2,16 +2,24 @@ package quality.education.q1.Model;
 
 public class Project {
 
-    private Long id;
+    private Integer id;
     private String name;
     private String steamField;
-    private String discription;
+    private String description;
 
-    public Long getId() {
+
+    public Project(Integer id, String name, String steamField, String description) {
+        this.id = id;
+        this.name = name;
+        this.steamField = steamField;
+        this.description = description;
+    }
+
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -31,12 +39,12 @@ public class Project {
         this.steamField = steamField;
     }
 
-    public String getDiscription() {
-        return discription;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDiscription(String discription) {
-        this.discription = discription;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     @Override
@@ -45,7 +53,7 @@ public class Project {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", steamField='" + steamField + '\'' +
-                ", discription='" + discription + '\'' +
+                ", description='" + description + '\'' +
                 '}';
     }
 }
