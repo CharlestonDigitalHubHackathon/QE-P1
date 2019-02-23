@@ -1,9 +1,8 @@
 body{
-    text-align: center;
-    background-color: coral;
-    margin: 0px;
+  
+    background-colorcolor: coral;  
 }
-.wrapper{
+wrapper{
     width:960px;
     margin:15px auto;
     text-align:left;
@@ -35,7 +34,7 @@ header h1{
 }
 nav{
         clear: left;    
-        background: gold;
+        background: coral;
         border-style: solid;
         border-width: 2px;
         border-color: black;
@@ -52,4 +51,8 @@ nav li{
         font-size: 24px;
         text-align: center;  
         width: 150px;
+}
+img {
+  float: left;
+  padding: 20 20 0 20;
 }
