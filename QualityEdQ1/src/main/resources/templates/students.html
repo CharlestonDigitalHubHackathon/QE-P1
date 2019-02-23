@@ -5,27 +5,28 @@
     <title>Student Display</title>
 </head>
 <body>
-<h1>Student List</h1>
-<table>
-    <thead>
-    <tr>
-        <th> First Name </th>
-        <th> Last Name</th>
-        <th> Age </th>
-        <th> Gender </th>
-        <th> Project Interest </th>
-    </tr>
-    </thead>
-    <tbody>
+    <h1>Student List</h1>
+    <table>
+        <thead>
+        <tr>
+            <th> First Name </th>
+            <th> Last Name</th>
+            <th> Age </th>
+            <th> Gender </th>
+            <th> Project Interest </th>
+        </tr>
+        </thead>
+        <tbody>
 
-    </tr>
-    <tr th:each="student : ${students}">
-        <td><span th:text="${student.firstName}"> First Name </span></td>
-        <td><span th:text="${student.lastName}"> Last Name </span></td>
-        <td><span th:text="${student.age}"> Age </span></td>
-        <td><span th:text="${student.projectIntrest}"> Project Interest </span></td>
-    </tr>
-    </tbody>
-</table>
+        </tr>
+        <tr th:each="student : ${students}">
+            <td><span th:text="${student.firstName}"> First Name </span></td>
+            <td><span th:text="${student.lastName}"> Last Name </span></td>
+            <td><span th:text="${student.age}"> Age </span></td>
+            <td><span th:text="${student.gender}"> Gender </span></td>
+            <td><span th:text="${student.projectIntrest}"> Project Interest </span></td>
+        </tr>
+        </tbody>
+    </table>
 </body>
 </html>

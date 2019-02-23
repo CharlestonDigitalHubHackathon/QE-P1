@@ -36,5 +36,9 @@ public class StudentRepository {
         return students.get(0);
     }
 
+    public ArrayList<Student> findAllStudents() {
+        return students;
+    }
+
 
 }

@@ -18,9 +18,9 @@
 
         </tr>
         <tr th:each="project : ${projects}">
-            <td><span th:text="${project.name}"> Title </span></td>
-            <td><span th:text="${project.steamField}"> Author </span></td>
-            <td><span th:text="${project.description}"> Author </span></td>
+            <td><span th:text="${project.name}"> Name </span></td>
+            <td><span th:text="${project.steamField}"> Stem Field </span></td>
+            <td><span th:text="${project.description}"> Description </span></td>
         </tr>
         </tbody>
     </table>
