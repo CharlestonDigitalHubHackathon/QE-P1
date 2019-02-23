@@ -49,7 +49,7 @@ public class WebController {
         return "projects";
     }
 
-    @RequestMapping(value = "/addStudent", method = RequestMethod.POST)
+    @RequestMapping(value = "/signup", method = RequestMethod.POST)
     public String submit(@Valid @ModelAttribute("student") Student student,
                          BindingResult result, ModelMap model) {
         if(result.hasErrors()){ return "error";}
